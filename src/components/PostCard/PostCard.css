@@ -1,0 +1,20 @@
+.css-adge35-MuiPaper-root-MuiCard-root {
+    background-color: rgb(105, 175, 179, .2) !important;
+    color: rgb(46, 64, 83 ) !important;
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    overflow: hidden;
+    width: 60% !important;
+    margin: auto;
+    margin-top: 160px !important;
+    padding: 16px;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+.css-1ce1bz2-MuiTypography-root {
+font-weight: bold;
+color: rgb(46, 64, 83 ) !important;
+
+}

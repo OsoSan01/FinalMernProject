@@ -38,7 +38,7 @@ export default class SignUpForm extends Component {
   render() {
     const disable = this.state.password !== this.state.confirm;
     return (
-        <div className="form-container">
+        <>
           <form autoComplete="off" onSubmit={this.handleSubmit}>
           <Box maxWidth={450}
           display="flex"
@@ -49,45 +49,51 @@ export default class SignUpForm extends Component {
           marginTop={5}
           boxShadow="10px 10px 20px #ccc"
           padding={5}
-          borderRadius={5}>
+          borderRadius={5}
+          sx={{ bgcolor: '#fdc57b' }}>
+          
         <Typography variant="h3" padding={3} textAlign="center" fontFamily={'Khula'}> Register </Typography>
         <TextField
-            placeholder="Name"
+            label="Name"
             value={this.state.name}
             onChange={this.handleChange}
             name="name"
             margin="normal"
             type={"text"}
-            required />
+            required 
+            sx={{ bgcolor: '#F2F3F4' }}/>
         <TextField
-          placeholder="email"
+          label="email"
           value={this.state.email}
           onChange={this.handleChange}
           name="email"
           margin="normal"
           type={"email"}
-          required/>
+          required
+          sx={{ bgcolor: '#F2F3F4' }}/>
           <TextField 
-            placeholder='Password'
+            label='Password'
             value={this.state.password}
             onChange={this.handleChange}
             name="password" 
             margin="normal" 
             type={"password"} 
-            required />
+            required 
+            sx={{ bgcolor: '#F2F3F4' }}/>
           <TextField
-            placeholder='Confirm Password'
+            label='Confirm Password'
             value={this.state.confirm}
             onChange={this.handleChange}
-            name="confirmPassword"
+            name="confirm"
             margin="normal"
             type="password"
-            required/>    
-            <Button type="submit" sx={{ borderRadius: 3, marginTop: 3}} variant="contained" color="secondary" disabled={disable}>SIGN UP</Button>
+            required
+            sx={{ bgcolor: '#F2F3F4' }}/>
+            <Button type="submit" sx={{ borderRadius: 3, marginTop: 3, backgroundColor:'#F5B041'}} variant="contained" disabled={disable}>SIGN UP</Button>
           </Box>
           </form>
         <p className="error-message">&nbsp;{this.state.error}</p>
-      </div>
+      </>
     );
   }
 }

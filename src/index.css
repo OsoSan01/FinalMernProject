@@ -4,11 +4,11 @@
   --tan-1: #82b2d7db;
   --tan-2: #63739bb0;
   --tan-3: #6890e084;
-  --tan-4: #a3afba63;
+  --tan-4: rgba(162, 217, 206, 0.305);
   --orange: #F67F00;
   --text-light: #968c84;
   --text-dark: #615954;
-  font-family: 'Khula', sans-serif;
+  font-family: 'Bitter', serif;
 }
 
 *, *:before, *:after {
@@ -78,12 +78,11 @@ code {
   font-size: 2vmin;
 }
 
-.form-container {
+/* .form-container {
   padding: 3vmin;
-  background-color: var(--tan-1);
   border: .1vmin solid var(--tan-3);
   border-radius: 1vmin;
-}
+} */
 
 p.error-message {
   color: var(--orange);

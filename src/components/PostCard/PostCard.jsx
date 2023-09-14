@@ -12,6 +12,7 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { Box, IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import "./PostCard.css"
 
 export default function PostCard({
   title,
@@ -27,10 +28,12 @@ export default function PostCard({
     navigate(`/post-details/${id}`);
   };
 
+  const formattedTime = new Date(time).toLocaleDateString();
+
   const handleDelete = async () => {
     try {
       const { data } = await axios.delete(`/api/post/delete-post/${id}`);
-      if (data?.success) {
+      if (data.success) {
         alert("Post Deleted");
         //updating the view to actually remove the post from rendering
         window.location.reload();
@@ -42,9 +45,10 @@ export default function PostCard({
   return (
     <Card
       sx={{
+        width:"40%",
         margin: "auto",
-        mt: 2,
-        padding: 2,
+        mt: 9,
+        padding: 1,
         boxShadow: "5px 5px 10px #ccc",
         ":hover:": {
           boxShadow: "10px 10px 20px #ccc",
@@ -63,21 +67,18 @@ export default function PostCard({
       )}
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            {name}
+          <Avatar
+          aria-label="recipe" src="https://prateekvjoshi.files.wordpress.com/2013/10/part-1.jpg">
+          sx={{ width: 56, height: 56 }}
           </Avatar>
         }
         title={name}
-        subheader={time}
+        subheader={formattedTime}
       />
-      <CardMedia component="img" height="194" image={image} alt="A Beautiful Picture" />
+        <Typography variant="h5" color="text.secondary" marginBottom={3} marginTop={2}> {title}</Typography>
+      <CardMedia component="img" height="200" image={image} alt="A Beautiful Picture" sx={{ objectFit: "contain" }}/>
       <CardContent>
-        <Typography variant="h6" color="text.secondary">
-          Title : {title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Description : {description}
-        </Typography>
+        <Typography variant="body2" color="text.secondary">{description}</Typography>
       </CardContent>
     </Card>
   );

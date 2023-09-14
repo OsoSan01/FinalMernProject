@@ -21,10 +21,10 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <ThemeProvider theme={theme}>
-    <AppBar color='primary'>
+    <AppBar color='primary' sx={{ flexDirection: 'column' }}>
       <Toolbar>
       <Typography variant='h4' fontFamily={'Khula'} color="#7AB7A8"> 
-        <span>Welcome, {user.name}</span>
+        <span id='user'>Welcome, {user.name}</span>
       </Typography>
         <Box Box display={'flex'} marginLeft='auto' marginRight={'auto'}>
           <Tabs textColor='inherit'> 

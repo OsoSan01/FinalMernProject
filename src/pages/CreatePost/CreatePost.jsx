@@ -37,19 +37,21 @@ export default function CreatePost() {
     console.log(error);
   }
 };
+
   return (
     <>
       <form onSubmit={handleSubmit}>
         <Box
-          width={"100%"}
+          width={"60%"}
+          sx={{ bgcolor: '#fcfefe' }}
           border={3}
           borderRadius={10}
-          padding={3}
+          padding={6}
           margin="auto"
           boxShadow={"10px 10px 20px #ccc"}
           display="flex"
           flexDirection={"column"}
-          marginTop="30px"
+          marginTop="180px"
         >
           <Typography
             variant="h2"
@@ -58,14 +60,10 @@ export default function CreatePost() {
             padding={3}
             color="gray"
           >
-            Create A Pots
+            Create the Post!
           </Typography>
-          <InputLabel
-            sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
-          >
-            Title
-          </InputLabel>
           <TextField
+            label="Title"
             name="title"
             value={inputs.title}
             onChange={handleChange}
@@ -73,12 +71,8 @@ export default function CreatePost() {
             variant="outlined"
             required
           />
-          <InputLabel
-            sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
-          >
-            Description
-          </InputLabel>
           <TextField
+            label="Description"
             name="description"
             value={inputs.description}
             onChange={handleChange}
@@ -86,12 +80,8 @@ export default function CreatePost() {
             variant="outlined"
             required
           />
-          <InputLabel
-            sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
-          >
-            Image URL
-          </InputLabel>
           <TextField
+            label="Image URL"
             name="image"
             value={inputs.image}
             onChange={handleChange}
@@ -99,7 +89,7 @@ export default function CreatePost() {
             variant="outlined"
             required
           />
-          <Button type="submit" color="primary" variant="contained">
+          <Button type="submit" sx={{ bgcolor: '#fdc57b' }} variant="contained">
             SUBMIT
           </Button>
         </Box>

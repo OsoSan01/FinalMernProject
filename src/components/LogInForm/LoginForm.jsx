@@ -1,3 +1,5 @@
+import { TextField, Typography, Button } from '@mui/material';
+import { Box } from '@mui/system';
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
 
@@ -29,17 +31,44 @@ export default function LoginForm({ setUser }) {
   }
 
   return (
-    <div>
+    <>
       <div className="form-container">
         <form autoComplete="off" onSubmit={handleSubmit}>
-          <label>Email</label>
-          <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
-          <label>Password</label>
-          <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
-          <button type="submit">LOG IN</button>
+        <Box maxWidth={450}
+          display="flex"
+          flexDirection={"column"}
+          alignItems="center"
+          justifyContent={"center"}
+          margin="auto"
+          marginTop={5}
+          boxShadow="10px 10px 20px #ccc"
+          padding={5}
+          borderRadius={5}
+          sx={{ bgcolor: '#fdc57b' }}>
+          <Typography variant="h3" padding={3} textAlign="center" fontFamily={'Khula'}> Login </Typography>
+          <TextField
+            label="Email"
+            value={credentials.email}
+            onChange={handleChange}
+            name="email"
+            margin="normal"
+            type={"text"}
+            required 
+            sx={{ bgcolor: '#F2F3F4' }}/>
+          <TextField
+            label='Password'
+            value={credentials.password}
+            onChange={handleChange}
+            name="password" 
+            margin="normal" 
+            type={"password"} 
+            required 
+            sx={{ bgcolor: '#F2F3F4' }}/>
+          <Button type="submit" sx={{ borderRadius: 3, marginTop: 3, backgroundColor:'#F5B041'}} variant="contained" color="secondary">LOG IN</Button>
+        </Box>
         </form>
       </div>
       <p className="error-message">&nbsp;{error}</p>
-    </div>
+    </>
   );
 }
