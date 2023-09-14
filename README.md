@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# **# The wrath of MERN ** 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"Captain's Log, Stardate 1673.1. Something has happened to me. I am now a Software Engineer. I almost have lost my strength and will during the last three months. Decisions are becoming more and more difficult. GitHub doesn’t want to cooperate with me.
 
-## Available Scripts
+And yet. At last. Final Unit. MERN Stack developtment, the last frontier..."
 
-In the project directory, you can run:
+Bootcamp is done. I can say it's been one of the most challenging things I have done, but it’s totally worth it.
 
-### `npm start`
+**## Goals**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Having an MVP by the end of the week.
+-Deal and work with the MERN Stack and have a fully operational back and front end.
+-Not throw the computer out of the window.
+-Realise that this is fun.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**## Tools**
 
-### `npm test`
+    -MongoDB/Mongoose: For managing the database and schemas.
+    -Express: Back-end structure.
+    -React: Front end. One-page type of app
+    -Node -JWT -Material UI -Postman
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**## How it Works?**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A user can create a profile. Inside it, the user can create posts to share and see all other users posts.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Those posts can be deleted or updated only by the user who made them.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**## Problems and solutions and tricky parts.**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    -React is far more complex than I anticipated.
+    -Working with API gets complicated as the project grows.
+    -Many, maaaaany moving parts.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I had technical difficulties, but even with that, GitHub saved my soul.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ (For any fellow developer out there. If you need a sign, this is: DON'T FORGET TO COMMIT AND PUSH)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**## What I liked, what I hated, what's next**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I could have done better. But a massive win for me is all the learning I got from all the problems I encountered.
 
-### Code Splitting
+What I hated:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    -I had to restart the project (yes, do the whole thing again) 4 times to get what I was doing. That was time-consuming
+    -Time that I definitely could use to make the site look better.
 
-### Analyzing the Bundle Size
+What I liked:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-I did it. That's it. It might not be the biggest or most appealing thing, but it works!
 
-### Making a Progressive Web App
+What will I improve:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+I’m not sure I will continue doing something here. However...
+-I will continue with the initial project of a booking system for a Pilates Studio. I know for sure I will be capable of pulling that out now.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THANKS, GA! Thanks, Tina, Joel and CJ!!!
