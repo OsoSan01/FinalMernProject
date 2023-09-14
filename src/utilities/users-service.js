@@ -41,3 +41,11 @@ export function getUser() {
   const token = getToken();
   return token ? JSON.parse(atob(token.split('.')[1])).user : null;
 }
+
+export function checkToken(){
+  //just so that I don't forget how to use .then with promises
+  return usersAPI.checkToken()
+  //checktoken returns a string, but let's
+  //make it a date object for more flexibility
+  .then(dateStr => new Date(dateStr));
+}

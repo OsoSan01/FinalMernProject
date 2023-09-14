@@ -16,7 +16,13 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  post: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: "Post",
+    },
+  ],
 }, {
   timestamps: true,
   toJSON: {
