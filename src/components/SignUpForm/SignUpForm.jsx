@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { signUp } from '../../utilities/users-service';
+import { Box, TextField, Typography, Button } from '@mui/material';
 
 export default class SignUpForm extends Component {
   state = {
@@ -37,20 +38,54 @@ export default class SignUpForm extends Component {
   render() {
     const disable = this.state.password !== this.state.confirm;
     return (
-      <div>
         <div className="form-container">
           <form autoComplete="off" onSubmit={this.handleSubmit}>
-            <label>Name</label>
-            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
-            <label>Email</label>
-            <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
-            <label>Password</label>
-            <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
-            <label>Confirm</label>
-            <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
-            <button type="submit" disabled={disable}>SIGN UP</button>
+          <Box maxWidth={450}
+          display="flex"
+          flexDirection={"column"}
+          alignItems="center"
+          justifyContent={"center"}
+          margin="auto"
+          marginTop={5}
+          boxShadow="10px 10px 20px #ccc"
+          padding={5}
+          borderRadius={5}>
+        <Typography variant="h3" padding={3} textAlign="center" fontFamily={'Khula'}> Register </Typography>
+        <TextField
+            placeholder="Name"
+            value={this.state.name}
+            onChange={this.handleChange}
+            name="name"
+            margin="normal"
+            type={"text"}
+            required />
+        <TextField
+          placeholder="email"
+          value={this.state.email}
+          onChange={this.handleChange}
+          name="email"
+          margin="normal"
+          type={"email"}
+          required/>
+          <TextField 
+            placeholder='Password'
+            value={this.state.password}
+            onChange={this.handleChange}
+            name="password" 
+            margin="normal" 
+            type={"password"} 
+            required />
+          <TextField
+            placeholder='Confirm Password'
+            value={this.state.confirm}
+            onChange={this.handleChange}
+            name="confirmPassword"
+            margin="normal"
+            type="password"
+            required/>    
+            <Button type="submit" sx={{ borderRadius: 3, marginTop: 3}} variant="contained" color="secondary" disabled={disable}>SIGN UP</Button>
+          </Box>
           </form>
-        </div>
         <p className="error-message">&nbsp;{this.state.error}</p>
       </div>
     );

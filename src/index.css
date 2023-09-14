@@ -1,10 +1,10 @@
 /* CSS Custom Properties */
 :root {
   --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
+  --tan-1: #82b2d7db;
+  --tan-2: #63739bb0;
+  --tan-3: #6890e084;
+  --tan-4: #a3afba63;
   --orange: #F67F00;
   --text-light: #968c84;
   --text-dark: #615954;
@@ -90,12 +90,6 @@ p.error-message {
   text-align: center;
 }
 
-form {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1.25vmin;
-  color: var(--text-light);
-}
 
 label {
   font-size: 2vmin;
