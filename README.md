@@ -1,19 +1,19 @@
-# **# The wrath of MERN ** 
+## ** The wrath of MERN ** 
 
-"Captain's Log, Stardate 1673.1. Something has happened to me. I am now a Software Engineer. I almost have lost my strength and will during the last three months. Decisions are becoming more and more difficult. GitHub doesn’t want to cooperate with me.
+"Captain's Log, Stardate 1673.1. Something has happened to me. Somehow, I am now a Software Engineer. I almost have lost my strength and will during the last three months. Decisions are becoming more and more difficult. GitHub doesn’t want to cooperate with me.
 
 And yet. At last. Final Unit. MERN Stack developtment, the last frontier..."
 
 Bootcamp is done. I can say it's been one of the most challenging things I have done, but it’s totally worth it.
 
-**## Goals**
+## Goals
 
 -Having an MVP by the end of the week.
 -Deal and work with the MERN Stack and have a fully operational back and front end.
 -Not throw the computer out of the window.
 -Realise that this is fun.
 
-**## Tools**
+## Tools
 
     -MongoDB/Mongoose: For managing the database and schemas.
     -Express: Back-end structure.
@@ -22,14 +22,14 @@ Bootcamp is done. I can say it's been one of the most challenging things I have 
 
 
 
-**## How it Works?**
+## How it Works?
 
 A user can create a profile. Inside it, the user can create posts to share and see all other users posts.
 
 Those posts can be deleted or updated only by the user who made them.
 
 
-**## Problems and solutions and tricky parts.**
+## Problems and solutions and tricky parts.
 
     -React is far more complex than I anticipated.
     -Working with API gets complicated as the project grows.
@@ -40,7 +40,7 @@ I had technical difficulties, but even with that, GitHub saved my soul.
  (For any fellow developer out there. If you need a sign, this is: DON'T FORGET TO COMMIT AND PUSH)
 
 
-**## What I liked, what I hated, what's next**
+## What I liked, what I hated, what's next
 
 I could have done better. But a massive win for me is all the learning I got from all the problems I encountered.
 
